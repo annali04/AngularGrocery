@@ -1,0 +1,23 @@
+/* @import 'https://fonts.googleapis.com/icon?family=Material+Icons'; */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css'; 
+
+
+.example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+  color:purple;
+}
+
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group>*{
+    width:100%;
+}
+
+.some-color{
+    color:#32CD32
+}

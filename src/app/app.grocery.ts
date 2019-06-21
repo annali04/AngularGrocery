@@ -1,4 +1,8 @@
 import { Component, OnInit } from "@angular/core";
+import {MatButtonModule} from '@angular/material/button';
+import { FormControl } from "@angular/forms";
+
+
 
 @Component({
     selector: 'app-grocery',
@@ -9,8 +13,9 @@ import { Component, OnInit } from "@angular/core";
 })
 
 export class GroceryComponent {
-    task: string;
     tasks = [];
+    // item = new FormControl();
+    task:string;
 
     constructor(){
 
@@ -19,6 +24,8 @@ export class GroceryComponent {
     onClick(){
         this.tasks.push({name: this.task});
         this.task = '';
+        console.log(this.task);
     }
+    
  
 }
