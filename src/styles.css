@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+
+h1 {
+    color: #369;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 250%;
+  }
+  h2, h3 {
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+  }
+  body {
+    margin: 2em;
+  }
+  body, input[type="text"], button {
+    color: #000000;
+    font-family: Cambria, Georgia;
+  }
+  /* everywhere else */
+  * {
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  /* Style the submit button */
+.btn {
+  /* float: left; */
+  width: 100px;
+  /* padding: 10px; */
+  background: #985E6D;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+

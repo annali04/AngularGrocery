@@ -1,5 +1,6 @@
-<div>
-        <h2> Grocery list manager </h2>
+<body>
+<div >
+        <h2> Grocery List Manager </h2>
      
         <div class="row">
             <div class="col-xs-6 col-md-4">
@@ -7,7 +8,8 @@
                     <input type="text" class="form-control" placeholder="enter grocery items" id="txtSearch" [(ngModel)]="task"/>
                     <div class="input-group-btn">
                      <button class="btn btn-info" type="button" (click)="onClick()">
-                     <span class="fa fa-search"></span>
+                     <i class="fa fa-plus-square"></i>
+                     <!-- <span class="fa fa-plus-square"></span> -->
                  </button>
                     </div>
                 </div>
@@ -16,11 +18,15 @@
     <br />
     <ul class="list-group">
             <li *ngFor="let task of tasks" class="list-group-item">
-                <span> {{ task.name }} </span>
+                <span>{{ task.name }} 
+                <!-- <button (click)="onEdit()"> -->
+                <!-- <i class="fa fa-pencil" aria-hidden="true" (click)="onEdit()"></i> -->
+                <!-- </button> -->
+                </span>
+                <!-- <span class="fa fa-pencil floatright"></span> -->
             </li>
     </ul>
-
-  
 </div>
+</body>
 
     

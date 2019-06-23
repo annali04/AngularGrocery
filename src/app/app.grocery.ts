@@ -14,8 +14,12 @@ import { FormControl } from "@angular/forms";
 
 export class GroceryComponent {
     tasks = [];
-    // item = new FormControl();
     task:string;
+    // task={
+    //     name:'',
+    //     id:0
+    // };
+
 
     constructor(){
 
@@ -25,7 +29,17 @@ export class GroceryComponent {
         this.tasks.push({name: this.task});
         this.task = '';
         console.log(this.task);
+        // if(this.task.id == 0){
+        //     this.tasks.push({id: (new Date()).getTime(),name: this.task.name});
+        // };
+        // console.log((new Date()).getTime());
+        // console.log(this.tasks);
     }
+
+    // onEdit(item){
+    //     this.task = item;
+    //     console.log("hihihih")
+    // }
     
  
 }
